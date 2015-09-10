@@ -1,0 +1,88 @@
+/*
+ * jQuery FlexSlider v1.8
+ * http://flex.madebymufffin.com
+ *
+ * Copyright 2011, Tyler Smith
+ * Free to use under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ */
+ 
+/* Browser Resets */
+.flex-container a:active,
+.flexslider a:active {outline: none;}
+.slides,
+.flex-control-nav,
+.flex-direction-nav {margin: 0; padding: 0; list-style: none;} 
+
+/* FlexSlider Necessary Styles
+*********************************/ 
+.flexslider {width: 100%; margin: 0; padding: 0;}
+.flexslider .slides > li {display: none;} /* Hide the slides before the JS is loaded. Avoids image jumping */
+.flexslider .slides img {max-width: 100%; display: block;}
+.flex-pauseplay span {text-transform: capitalize;}
+
+/* Clearfix for the .slides element */
+.slides:after {content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0;} 
+html[xmlns] .slides {display: block;} 
+* html .slides {height: 1%;}
+
+/* No JavaScript Fallback */
+/* If you are not using another script, such as Modernizr, make sure you
+ * include js that eliminates this class on page load */
+.no-js .slides > li:first-child {display: block;}
+
+
+.slides, .flex-control-nav, .flex-direction-nav {
+    margin: 0px;
+    padding: 0px;
+    list-style: outside none none;
+}
+.flex-control-nav {
+    position: absolute !important;
+    bottom: 15px !important;
+    right: 2%;
+}
+.flex-direction-nav, .flex-control-nav, .flex-caption {
+    margin-bottom: 0px !important;
+}
+
+.slideshow li, #content .flexslider li, #content .flexslider ol {
+    list-style: outside none none !important;
+}
+li {
+    margin: 0px;
+    padding: 0px;
+}
+
+.prev {
+    background: black url("../images/small-prev.png") no-repeat scroll center center;
+    left:0px;
+    bottom: 0px;
+}
+.next {
+    background: black url("../images/small-next.png") no-repeat scroll 15px center;
+    right: 0px;
+    bottom: 0px;
+}
+
+.flex-direction-nav a {
+    margin: 0px;
+    display: block;
+    position: absolute;
+    top: 0px;
+    cursor: pointer;
+    text-indent: -9999px;
+    z-index: 9999;
+    overflow: visible !important;
+    outline: medium none;
+}
+
+.flex-direction-nav {
+    list-style: outside none none;
+    height: inherit;
+    width: inherit;
+}
+
+#slideshow div ul{
+    margin: 0px;
+}

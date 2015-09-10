@@ -1,0 +1,166 @@
+#latestwork {
+    position: relative;
+    margin: 4%;
+}
+
+#latestwork .teasertext{
+	width:215px;
+	float:left;
+	margin-right:20px;
+}
+
+#latestwork .work-carousel{
+	margin-left:40px;
+	min-height:150px;
+	max-width:685px !important;
+	overflow: hidden;
+	margin-top: 3%;
+}
+
+#latestwork .entry{
+  overflow: hidden;
+  position: relative;
+  width:215px;
+  margin-right:20px;
+  float:left;
+  height: inherit;
+  background: #000000;
+}
+
+.entry h4{
+  padding:0;
+  margin:0;
+  min-height: inherit;
+}
+
+.entry .work-description{
+  min-height: 135px;
+}
+
+.entry h4 a{
+  display: block;
+  font-size: 18px;
+  margin: 0;
+  padding: 18px 10px 10px 12px;
+  font-weight: 600;
+  min-height: inherit;
+  margin-top: -6px;
+  background: #EFEFEF;
+  color: #888;
+}
+
+.entry .work-description span{
+  position: absolute;
+  bottom:0;
+  right:0;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 15px 15px 0 0;
+  border-color: #cccccc white transparent transparent;
+}
+
+.entry:hover .work-description span{
+  border-color: #0000FF white transparent transparent;
+  transition-duration:0.23s;
+  transition-timing-function: cubic-bezier(0.9,0,1,0.25);
+}
+
+.entry a .zoom{
+  position: absolute;
+  top:0;
+  left:0;
+  display: block;
+  width:215px;
+  height:140px;
+  background: rgba(0, 0, 0, 0.6) url(../images/zoom.png) no-repeat center center;
+  opacity: 0;
+}
+
+#latestwork .entry a i.work-subtitle {
+    display:block;
+	font-style:normal;
+	font-size:11px;
+	font-weight:400;
+}
+
+#latestwork .entry .work-description span{
+  position: absolute;
+  bottom:0;
+  right:0;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 15px 15px 0 0;
+  border-color: #cccccc white transparent transparent;
+}
+
+#latestwork .entry a .zoom{
+  position: absolute;
+  top:0;
+  left:0;
+  display: block;
+  width:215px;
+  height:140px;
+  background: rgba(0, 0, 0, 0.6) url(../images/zoom.png) no-repeat center center;
+  opacity: 0;
+}
+
+#latestwork .entry a.prettyPhoto .zoom{
+  background: rgba(0, 0, 0, 0.6) url(../images/zoom-lightbox.png) no-repeat center center;
+}
+
+#latestwork .entry:hover a{
+	margin-top:-6px;
+	background: #3638FF;
+	color:#ffffff;
+	text-decoration: none;
+	transition-duration:0.23s;
+	transition-timing-function: ease-in;
+}
+
+#latestwork .entry:hover .work-description span{
+  border-color: #0000FF white transparent transparent;
+  transition-duration:0.23s;
+  transition-timing-function: cubic-bezier(0.9,0,1,0.25);
+}
+
+.carousel-nav{
+	margin-top:20px;
+}
+
+a.work-carousel-prev, a.post-carousel-prev{
+	display:block;
+	float:left;
+	width:9px;
+	height:13px;
+	background: url(../images/small-prev.png) no-repeat;
+	display: block;
+	text-indent: -9999px;
+	opacity: 0.4;
+	margin-right:10px;
+}
+a.work-carousel-prev:hover, a.post-carousel-prev:hover{
+	opacity: 0.8;
+	border: none;
+}
+a.work-carousel-next, a.post-carousel-next{
+	display:block;
+	float:left;
+	width:9px;
+	height:13px;
+	background: url(../images/small-next.png) no-repeat;
+	display: block;
+	text-indent: -9999px;
+	opacity: 0.4;
+}
+a.work-carousel-next:hover, a.post-carousel-next:hover{
+	opacity: 0.8;
+	border: none;
+}
+
+.work-carousel-prev.disabled, .work-carousel-next.disabled, .post-carousel-prev.disabled,
+.post-carousel-next.disabled {
+    visibility: hidden
+}
+
