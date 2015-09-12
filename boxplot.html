@@ -17,7 +17,14 @@ google.setOnLoadCallback(drawChart);
     ], true);
 
     var options = {
-      legend:'none'
+      legend:'none',
+      hAxis: {
+            title: 'Count Of Items Sold',
+            minValue: 0
+          },
+          vAxis: {
+            title: 'Unit Price'
+          }
     };
 
     var chart = new google.visualization.CandlestickChart(document.getElementById('chart_div'));

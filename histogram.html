@@ -5,26 +5,36 @@
   <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type="text/javascript">
-      google.load("visualization", "1", {packages:["corechart"]});
-      google.setOnLoadCallback(drawChart);
-      function drawChart() {
+      google.load('visualization', '1', {packages: ['corechart', 'bar']});
+  google.setOnLoadCallback(drawBasic);
+
+  function drawBasic() {
+
         var data = google.visualization.arrayToDataTable([
-          ['Unit Price', 'Count Of Items Sold'],
-          ['40-59', 2988],
-          ['60-79', 4352],
-          ['80-99', 5211],
-          ['100-119', 3678],
-          ['120-139', 234]
-          ]);
+            ['Unit Price', 'Count Of Items Sold'],
+            ['40-59', 2988],
+            ['60-79', 4352],
+            ['80-99', 5211],
+            ['100-119', 3678],
+            ['120-139', 234]
+            ]);
 
         var options = {
           title: 'Histogram for Items sold, per unit price',
-          legend: { position: 'none' },
+          chartArea: {width: '100%'},
+          hAxis: {
+            title: 'Count Of Items Sold',
+            minValue: 0
+          },
+          vAxis: {
+            title: 'Unit Price'
+          }
         };
 
-        var chart = new google.visualization.Histogram(document.getElementById('chart_div'));
+        var chart = new google.visualization.BarChart(document.getElementById('chart_div'));
+
         chart.draw(data, options);
-      }
+    }
     </script>
   </head>
   <body>

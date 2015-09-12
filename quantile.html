@@ -33,7 +33,14 @@
         var options = {
           title: 'Quantile Plot visualization of Unit Price Data',
           // curveType: 'function',
-          legend: { position: 'bottom' }
+          legend: { position: 'bottom' },
+          hAxis: {
+            title: 'Count Of Items Sold',
+            minValue: 0
+          },
+          vAxis: {
+            title: 'Unit Price'
+          }
         };
 
         var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
