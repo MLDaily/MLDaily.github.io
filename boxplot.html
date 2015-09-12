@@ -3,9 +3,6 @@
   <title>Box Plot</title>
   <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
   <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
-  <link rel="stylesheet" href="css/normalise.css'?>" type="text/css">
-  <link rel="stylesheet" href="css/style.css'?>" type="text/css">
-  <script src="js/jquery-1.11.3.min.js"></script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type="text/javascript">
       google.load("visualization", "1", {packages:["corechart"]});
@@ -32,9 +29,7 @@ google.setOnLoadCallback(drawChart);
   <body>
     <div class="container-fluid">
       <div class="row">
-        <div class="col-md-8 col-md-offset-2" style="text-align:justify">
-          <div id="curve_div" style="width: 900px; height: 500px"></div>
-        </div>
+        <div class="col-md-8 col-md-offset-2" id="chart_div" style="width: 900px; height: 500px"></div>
       </div>
     </div>
   </body>

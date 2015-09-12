@@ -1,28 +1,33 @@
 <html>
   <head>
-  <title>Histogram</title>
+  <title>Scatter Plot</title>
   <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
   <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+  <script src="js/jquery-1.11.3.min.js"></script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type="text/javascript">
       google.load("visualization", "1", {packages:["corechart"]});
       google.setOnLoadCallback(drawChart);
       function drawChart() {
         var data = google.visualization.arrayToDataTable([
-          ['Unit Price', 'Count Of Items Sold'],
-          ['40-59', 2988],
-          ['60-79', 4352],
-          ['80-99', 5211],
-          ['100-119', 3678],
-          ['120-139', 234]
-          ]);
+          ['Age', 'Weight'],
+          [ 8,      12],
+          [ 4,      5.5],
+          [ 11,     14],
+          [ 4,      5],
+          [ 3,      3.5],
+          [ 6.5,    7]
+        ]);
 
         var options = {
-          title: 'Histogram for Items sold, per unit price',
-          legend: { position: 'none' },
+          title: 'Age vs. Weight comparison',
+          hAxis: {title: 'Age', minValue: 0, maxValue: 15},
+          vAxis: {title: 'Weight', minValue: 0, maxValue: 15},
+          legend: 'none'
         };
 
-        var chart = new google.visualization.Histogram(document.getElementById('chart_div'));
+        var chart = new google.visualization.ScatterChart(document.getElementById('chart_div'));
+
         chart.draw(data, options);
       }
     </script>
