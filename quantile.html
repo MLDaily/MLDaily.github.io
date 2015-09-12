@@ -1,0 +1,46 @@
+ <html>
+  <head>
+    <script type="text/javascript"
+          src="https://www.google.com/jsapi?autoload={
+            'modules':[{
+              'name':'visualization',
+              'version':'1',
+              'packages':['corechart']
+            }]
+          }"></script>
+
+    <script type="text/javascript">
+      google.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          [ 'Unit Price ($)', 'Count of Items Sold'],
+          [  40,      275],
+          [  43,      300],
+          [  47,       250],
+          [  'Q1',       'Q1'],
+          [  74,      360],
+          [  75,       515],
+          [  78,       540],
+          [  'Q3',       'Q3'],
+          [  115,       320],
+          [  117,       270],
+          [  120,       350],
+        ]);
+
+        var options = {
+          title: 'Quantile Plot visualization of Unit Price Data',
+          // curveType: 'function',
+          legend: { position: 'bottom' }
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="curve_chart" style="width: 900px; height: 500px"></div>
+  </body>
+</html>
