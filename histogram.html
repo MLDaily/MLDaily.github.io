@@ -1,0 +1,37 @@
+<html>
+  <head>
+  <title>Histogram</title>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+      google.load("visualization", "1", {packages:["corechart"]});
+      google.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Unit Price', 'Count Of Items Sold'],
+          ['40-59', 2988],
+          ['60-79', 4352],
+          ['80-99', 5211],
+          ['100-119', 3678],
+          ['120-139', 234]
+          ]);
+
+        var options = {
+          title: 'Histogram for Items sold, per unit price',
+          legend: { position: 'none' },
+        };
+
+        var chart = new google.visualization.Histogram(document.getElementById('chart_div'));
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2" style="text-align:justify">
+          <div id="curve_div" style="width: 900px; height: 500px"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
