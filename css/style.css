@@ -1,5 +1,28 @@
-h1{
-    background-color: rgba(0, 132, 255, 0.2);
-    padding: 10px;
-    border-radius: 3px;
+.home{
+	min-width:100%;
+}
+
+.title-post{
+	color:white;
+	background-color: #2a7ae2;
+	background-repeat: none;
+	border: 10px solid #2a7ae2;
+	padding: 0px 10px;
+	border-radius: 30px;
+}
+
+a.title-post{
+	color: white;
+}
+
+a:hover{
+	text-decoration: none;
+}
+
+.meta-post{
+	background-color: lightgray;
+	background-repeat: none;
+	border: 10px solid lightgray;
+	border-radius: 30px;
+	margin: -10px 0px;
 }
