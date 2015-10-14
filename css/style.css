@@ -26,3 +26,9 @@ a:hover{
 	border-radius: 30px;
 	margin: -10px 0px;
 }
+
+.title-post-page{
+	padding-left: 5px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid black;
+}

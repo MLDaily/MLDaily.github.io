@@ -1,11 +1,7 @@
 ---
-layout: page
+layout: main
 title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
-
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
-
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+This blog was developed in order for us, in the organization, to get a complete understanding of how projects in machine learning are done and what we, as students, could do to use this knowledge to contribute to <strong>Machine Learning</strong>.<br><br>
