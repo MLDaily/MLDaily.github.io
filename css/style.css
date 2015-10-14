@@ -22,6 +22,7 @@ a:hover{
 .meta-post{
 	background-color: lightgray;
 	background-repeat: none;
+	padding: 0px 10px;
 	border: 10px solid lightgray;
 	border-radius: 30px;
 	margin: -10px 0px;
