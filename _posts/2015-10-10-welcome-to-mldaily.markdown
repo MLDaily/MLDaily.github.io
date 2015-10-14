@@ -5,6 +5,20 @@ date:   2015-10-10 12:41:36
 categories: Machine Learning Introduction
 ---
 
+Machine learning has been the essence of development since a long time now. Do you know what Machine Learning is ?<br><br>
+
+Machine learning is a subfield of computer science that evolved from the study of pattern recognition and computational learning theory in artificial intelligence. Machine learning explores the study and construction of algorithms that can learn from and make predictions on data. It is the science of making the computers act without being explicitly programmed to do so.<br><br>
+
+Let me ask you a question. Have you ever tried to find out what google play, which when finding out what you might like, does ? Or, have you ever tried to find out how Flipkart gets to know what you might need and gives you a discount on exactly that particular thing ? Or, if I may, have you tried playing chess with a computer, and no matter how good you are, the computer figures out your next move (on higher levels) and you are left with nothing other than changing the move ?<br><br>
+
+I have just two words to answer these and many more of these types of questions, Artificial Intelligence !<br><br>
+
+Now, you might have heard of it, but you might not know a great deal about it. That is what we want to help you in. We would like to showcase every bit of our understanding and excitement about Artificial Intelligence (Machine Learning, to be more specific). This solves two purposes - one where we help people gain interest in such a topic and the other where we are able to learn.<br><br>
+
+We would be taking this one topic at a time, starting with the most basic of things, and finally finishing with the most advanced (though in this age of evolution, it might never end).<br><br>
+
+
+
 <!-- This blog was developed in order for us, in the organization, to get a complete understanding of how projects in machine learning are done and what we, as students, could do to use this knowledge to contribute to <strong>Machine Learning</strong>.<br> -->
 
 <!-- Types of <strong>Chart Plots</strong> that are usually used in displaying what kind of data we have : <br>
