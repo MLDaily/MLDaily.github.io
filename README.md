@@ -1,3 +1,3 @@
 # MLDaily.github.io
 
-Data mining practice
+Machine Learning
