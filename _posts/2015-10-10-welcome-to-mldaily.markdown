@@ -1,21 +1,21 @@
 ---
 layout: main
-title:  "Welcome to MLDaily !"
+title:  "Welcome to MLDaily!"
 date:   2015-10-10 12:41:36
 categories: Machine Learning Introduction
 ---
 
-Machine learning has been the essence of development since a long time now. Do you know what Machine Learning is ?<br><br>
+Machine learning has been the secret sauce of the much hyped technical advancements, but what is Machine learning?<br><br>
 
-Machine learning is a subfield of computer science that evolved from the study of pattern recognition and computational learning theory in artificial intelligence. Machine learning explores the study and construction of algorithms that can learn from and make predictions on data. It is the science of making the computers act without being explicitly programmed to do so.<br><br>
+Machine learning is a subfield of computer science, that evolved from the study of pattern recognition and computational learning theory of artificial intelligence. Machine learning aims to study, and develop algorithms that can learn from, and make predictions on a variety of data. It is the science of making the computers act without being explicitly programmed to do so!<br><br>
 
-Let me ask you a question. Have you ever tried to find out what google play, which when finding out what you might like, does ? Or, have you ever tried to find out how Flipkart gets to know what you might need and gives you a discount on exactly that particular thing ? Or, if I may, have you tried playing chess with a computer, and no matter how good you are, the computer figures out your next move (on higher levels) and you are left with nothing other than changing the move ?<br><br>
+Lets drill down. Have you wondered at how google play know the apps you might want to download? Or, how Flipkart offers you a discount a product you are interested in buying ? Or, if I may, have you tried playing chess with a computer and ended up losing. All these incidents are no coincidene, no magic. Wondering what it is then?
 
-I have just two words to answer these and many more of these types of questions, Artificial Intelligence !<br><br>
+The answer being, Artificial Intelligence!<br><br>
 
-Now, you might have heard of it, but you might not know a great deal about it. That is what we want to help you in. We would like to showcase every bit of our understanding and excitement about Artificial Intelligence (Machine Learning, to be more specific). This solves two purposes - one where we help people gain interest in such a topic and the other where we are able to learn.<br><br>
+Now, you might have heard of it, but you not know a great deal about it. Or, wish to learn about AI from scratch, or might be an expert at it. Even if you are slightly interested in this field, you will find this guide cum blog handy. Packed with all excitment and knowlegede we have reagridng AI and ML, we are here to learn, teach and share.<br><br>
 
-We would be taking this one topic at a time, starting with the most basic of things, and finally finishing with the most advanced (though in this age of evolution, it might never end).<br><br>
+One topic at a time, we shall start with the basics, and finish with the most advanced ones (although in this age of evolution, it might never end). Care enough for the journey? Stay tuned for more.<br><br>
 
 
 
