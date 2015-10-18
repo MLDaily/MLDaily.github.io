@@ -9,13 +9,13 @@ Machine learning has been the secret sauce of the much hyped technical advanceme
 
 Machine learning is a subfield of computer science, that evolved from the study of pattern recognition and computational learning theory of artificial intelligence. Machine learning aims to study, and develop algorithms that can learn from, and make predictions on a variety of data. It is the science of making the computers act without being explicitly programmed to do so!<br><br>
 
-Lets drill down. Have you wondered at how google play know the apps you might want to download? Or, how Flipkart offers you a discount a product you are interested in buying ? Or, if I may, have you tried playing chess with a computer and ended up losing. All these incidents are no coincidene, no magic. Wondering what it is then?
+Lets drill down. Have you wondered at how google play know the apps you might want to download? Or, how Flipkart offers you a discount a product you are interested in buying ? Or, if I may, have you tried playing chess with a computer and ended up losing every time ? All these incidents are no coincidene, no magic. Wondering what it is then?
 
-The answer being, Artificial Intelligence!<br><br>
+The answer is, Artificial Intelligence!<br><br>
 
-Now, you might have heard of it, but you not know a great deal about it. Or, wish to learn about AI from scratch, or might be an expert at it. Even if you are slightly interested in this field, you will find this guide cum blog handy. Packed with all excitment and knowlegede we have reagridng AI and ML, we are here to learn, teach and share.<br><br>
+Now, you might have heard of it, but you might not know a great deal about it, or, wish to learn about AI from scratch, or might as well be an expert at it. Even if you are slightly interested in this field, you will find this guide cum blog handy. Packed with all excitment and knowlegede we have regaridng AI and ML, we are here to learn, teach and share.<br><br>
 
-One topic at a time, we shall start with the basics, and finish with the most advanced ones (although in this age of evolution, it might never end). Care enough for the journey? Stay tuned for more.<br><br>
+One topic at a time, we start with the basics, and finish with the most advanced ones (although in this age of evolution, it might never end). Care enough for the journey ? Stay tuned for more.<br><br>
 
 
 
