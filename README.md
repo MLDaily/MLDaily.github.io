@@ -6,4 +6,4 @@ The blog covers the most widley used algorithms in implementation. Given the vas
 
 We personally thank you for taking out time and viewing our blog. Hoping it proved helpful. If not, please do mail us (or tweet us) your suggestions, and we shall try accomodating them in the upcoming posts.<br><br>
 
-You can take a look at the blog [here](mldaily.github.io)
+You can take a look at the blog [here](https://mldaily.github.io).
