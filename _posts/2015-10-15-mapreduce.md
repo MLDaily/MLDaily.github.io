@@ -9,13 +9,12 @@ categories: ml-algorithms
 
 <style type="text/css">
 	.imagestack, .imagestack1{
-		padding:20px;
+		padding:50px;
 		border:1px solid lightgray;
 		border-radius: 5px;
 		margin: 20px 0px;
 		text-align: center;
-		height:450px;
-		padding: 40px;
+		height:auto;
 	}
 	.imagestack1 ul{
 		height: 100%;
