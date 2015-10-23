@@ -87,14 +87,14 @@ categories: ml-algorithms
 
 ##Cluster Architecture
 <br>
-Modern data-mining applications, often called “big-data” analysis, require us to manage immense amounts of data quickly. In many of these applications, the data is extremely regular, and there is ample opportunity to exploit parallelism. Let's consider an example.
+Modern data-mining application, often called “big-data” analysis, demands quick processing over huge volume of data. In most of these applications, the data is extremely regular, offering an opportunity to exploit parallelism. Let's see an example.
 
-Let us say Google has to process about 10 billion pages everyday. The average size of a webpage may be about 20kb amounting to a whole <strong>200 TB</strong> for 10 billion pages. The data of each webpage has to be read from the CPU and the disk read bandwidth averages to about <strong>50 MB/sec</strong>. So, the time taken to read such amount of data by the Google servers would be about <strong>4 million seconds or 46+ days</strong>. So how does Google manage to do it in about 1-2 seconds ?
+Google has to process about 6 billion pages everyday(4 million queries per minute!). The average size of a webpage is around 20kb, amounting to <strong>120 TB</strong> for 6 billion pages. The data of each webpage has to be read from the memory via  CPU. When the disk read bandwidth averages to <strong>50 MB/sec</strong>, the query time of Google servers should be <strong>2.4 million seconds or 27+ days</strong>. But Google manages this within 1-2 seconds. How ?
+>"When the load on your ox increases, and you cannot increase the strength of that ox beyond a limit, then you must increase the number of oxen employed for the task" -Grace Hopper's analogy for parallel processing.
 
+This is exactly what Google did, and it forms the underlying principal of <strong>Cluster Architecture</strong>.
 
-Now, the obvious thing you can think of is parallel processing of data. This data gets divided into chunks, and chunks are worked upon in parallel and data processing becomes faster cutting down a lot of time. So, if Google has about 1 million servers then it is able to process the faster cutting down the 4 million seconds into 4 seconds. This is the basic idea of <strong>Cluster Architecture</strong>.
-
-Most computing is done on a single processor, with its main memory, cache, and local disk (comput node). The <strong>compute nodes</strong> are commodity hardware, which greatly reduces the cost compared with special-purpose parallel machines. The new parallel-computing architecture, sometimes called cluster computing, is organized as follows. Compute nodes are stored on racks, perhaps 8–64 on a rack. The nodes on a single rack are connected by a network, typically gigabit Ethernet. There can be many racks of compute nodes, and racks are connected by another level of network or a switch. The bandwidth of inter-rack communication is somewhat greater than the intrarack Ethernet, but given the number of pairs of nodes that might need to communicate between racks, this bandwidth may be essential. Figure below suggests the architecture of a large-scale computing system. However, there may be many more racks and many more compute nodes per rack.
+Most computation is done on a single processor, using its main memory, cache, and local disk (comput node). The <strong>compute nodes</strong> are commodity hardware. 10x cheaper than special-purpose parallel machines. The new parallel-computing architecture, sometimes called cluster computing, is organized as follows. Independent compute nodes are stored on racks, perhaps 8–64 on a rack. The nodes on a single rack are connected by a network, typically gigabit Ethernet. There are many racks within a data center, and racks are inter connected by another level of network or a switch. The bandwidth of inter-rack communication is just slightly higher than the intrarack Ethernet, but given the number of pairs of nodes that might need to communicate between racks, this difference is considerable. The figure below suggests the architecture of a large-scale computing system. However, there may be many more racks and many more compute nodes per rack.
 
 <div class="rack">
 	<div class='switch'>SWITCH</div>
@@ -115,19 +115,19 @@ Most computing is done on a single processor, with its main memory, cache, and l
 
 
 
-Cluster computing itself comes with a number of challenges, like:
+Cluster computing comes with its own set of challenges. Some of them being:
 <ul >
-	<li ><strong>Node Failures,</strong> which check the persistency of each of the nodes. Node failure is possible at any moment and failures during long process computations might cost a lot. In order to remove this, we store the same data on multiple nodes such that copies of the same data are available and computation does not need to stop.</li>
-	<li ><strong>Network Bottleneck.</strong> This is a problem with the connection speeds among two nodes or switches. This speed is limited and moving loads of data might take a lot of time.</li>
-	<li ><strong>Distributed Programming.</strong> Now distributed programming requires a lot of background knowledge and could be hard to implement. For this we make a simple programming model which hides the complexity underneath.</li>
+	<li ><strong>Node Failure-</strong>A scenario highly possible, and computationaly taxing. In order to prevent loss of data, we store the same data on multiple nodes. So that the redundant data is always available for compuatation.</li>
+	<li ><strong>Network Speed-</strong>Nodes are continuously transfering information(in huge amounts) among themselves. Thus, limited network speed can become a bottleneck as it uncessarliy adds to the overall quering time.</li>
+	<li ><strong>Distributed Programming Paradigm-</strong>Writing highly optimised and accurate distributed alogirthms is tough. For it not only requires you to be an expert programmer, but to also have extensive knowledge about the underlying system.</li>
 </ul>
 
 
-These challenges are solved by using a <strong>Distributed File System</strong>. A Distributed File System requires writing data once and reading it as many times as is required. Usually it consists of these three components :
+These challenges have been effectiveky answered by the  <strong>Distributed File System(DFS)</strong>. DFS requires writing data once, and then reading it as and when required. Three main components of the DFS include:
 <ul >
-	<li ><strong>Chunk Servers</strong> serve as computational servers. A chunk is replicated about 2 to 3 times on different servers so as to avoid any loss of data. So, in a way, we are trying to move computation towards data for faster computation.</li>
-	<li ><strong>The Master Node</strong> stores the metadata related to each server and assigns them tasks related to computation.</li>
-	<li ><strong>Client Library</strong> keeps in contact with the master node to find the chunk server and connects directly to the chunk servers to access the data.</li>
+	<li ><strong>Chunk Servers-</strong> They act as computational servers. A chunk(a block of data) is replicated about 2 to 3 times on different servers so as to provide persistancy in the face of failure. In addition these nodes carry out the computation that is requested by the user. Instead of sending the data(larger in size) to user, we bring the user query(smaller in size)to the data.</li>
+	<li ><strong>The Master Node-</strong>A node that stores the metadata related to each server, and assigns them tasks. It is the master node responsible for overall health of the DFS</li>
+	<li ><strong>Client Libraries-</strong>A set APIs that contact with the master node to find the desired chunk server, and then connect directly to the chunk servers for read/write operations.</li>
 </ul>
 
 <br>
