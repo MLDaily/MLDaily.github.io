@@ -1,0 +1,16 @@
+To run this on your system :
+
+Install :
+
+1. Ruby; Install Ruby on ubuntu by the command: 
+``` sudo apt-get install ruby-full```
+
+2. RubyGems; Install RubyGems on ubuntu by the command:
+``` sudo apt-get install rubygems```
+
+3. Jekyll; Install Jekyll by the command:
+```gem install Jekyll```
+
+in this directory, run:
+
+```Jekyll serve```
