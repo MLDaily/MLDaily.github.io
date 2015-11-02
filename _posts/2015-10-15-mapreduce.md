@@ -223,6 +223,7 @@ categories: ml-algorithms
 Modern data-mining application, often called “big-data” analysis, demands quick processing over huge volume of data. In most of these applications, the data is extremely regular, offering an opportunity to exploit parallelism. Let's see an example.
 
 Google has to process about 6 billion pages everyday(4 million queries per minute!). The average size of a webpage is around 20kb, amounting to <strong>120 TB</strong> for 6 billion pages. The data of each webpage has to be read from the memory via  CPU. When the disk read bandwidth averages to <strong>50 MB/sec</strong>, the query time of Google servers should be <strong>2.4 million seconds or 27+ days</strong>. But Google manages this within 1-2 seconds. How ?
+
 >"When the load on your ox increases, and you cannot increase the strength of that ox beyond a limit, then you must increase the number of oxen employed for the task" -Grace Hopper's analogy for parallel processing.
 
 This is exactly what Google did, and it forms the underlying principal of <strong>Cluster Architecture</strong>.
