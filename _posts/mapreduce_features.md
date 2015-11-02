@@ -14,12 +14,14 @@ In this blog post, we shall be covering the counters and sorting in detail.
 They act **pseudo checkpoints** for your program, with their values getting incremented when a certain event is triggred. Counter are counter-part of logs, but in numeric format. The counter values can be used to provide statistical information about the health of the node and, in turn about the progress of the job. Hadoop provides various build in counters, divided in groups. Each group either contains atleast a task counter or a job counter.
 
 <strong>Task Counters</strong> 
+
 These are updated through the course of an individual task, each job is broken into a number of tasks and *each task has its own set of task counters*. The task counters (as the name suggests) periodically send their infomation to their parent task tracker. The task tracker then handshakes this information to the job tracker for aggretation. The information obtained from the task counters can be read while the job is running, using the JAVA APIs to retirve the counter values. This keeps the user updated about the status of the tasks.
 
 <strong> EG: FILE_OUTPUT COUNTER</strong>: A type of FileOUtputFormat counter; keeps track of number of data bytes wriiten by mapper during intermediate storage of mapped data in the local file system. The aggregate of which gives the total bytes written at the end of mapping.
 
 
 <strong>Job Counters</strong> 
+
 These are execusively maintained by the job tracker. They are never communicated across the network. The job counters measure the job_level(global) changes.
 
 <strong>Eg: Data_Local_Maps and Rack_Local_Maps</strong> - They count the number of jobs that ran on the node and same rack respectively, as the input data.
@@ -90,9 +92,11 @@ when concatinated in a single file. (the output of a reducer is dumped all at on
 is a totally sorted output.
 
 <strong>Secondary Sorting</strong> 
+
 The MapReduce sorts records by the key before they are passed to the reducers. However, for the same key, the values are not sorted. Infact, the mapreduce programs are written such that they independent of the order of the values. This is because, values with same keys might end up in different partitions, or are written at different time. Users can still impose ordering on value as well. Here the whole \<key,value\> gets treated as a compsite \<KEY\> for the purpose of sorting. The sorting happens on the basics of the natural(original) key, but in case of duplicacy the natural value comes to the rescue.
 
 <strong>Eg:</strong> \<key, value\> = \<First_Name, Last_Name\>
+
 By default only the First_Name is sorted. In case of matching First_Name, the Last_Name  are randomly ordered. By using \<First_Name, last name\> as a composite key \<Name\>, better results are obtained.
 
 This sums up the basics about the two most widely applied features of MapReduce. Watch out this space for more!
