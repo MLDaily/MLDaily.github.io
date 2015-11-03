@@ -21,9 +21,7 @@ When huge datasets are under execution, it is hard to keep track of <strong>perf
 
 * Side Data Distribution 
 
-In this blog post, we shall be covering the counters and sorting in detail.
-<br>
-
+Let us explore each feature in detail.
 
 ##Counters
 
