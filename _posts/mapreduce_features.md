@@ -1,4 +1,4 @@
-#FEATURES OF MAPREDUCE
+#FEATURES OF MAPREDUCE PART-1
 <br>
 
 When huge datasets are under execution, it is hard to keep track of <strong>performance variables(status, progress, memory, speed to name a few)</strong>. The <i>Hadoop Mapreduce</i> comes packed with a number of features and utilities to help us around. Some of the key features of MapReduce include:
@@ -27,7 +27,7 @@ These are execusively maintained by the job tracker. They are never communicated
 <strong>Eg: Data_Local_Maps and Rack_Local_Maps</strong> - They count the number of jobs that ran on the same node, and same rack respectively, as the input data.
 
 In addition to the numerous build in counters, MapReduce has provision for custom counters as well. So the user can create a counter as per his need. By default the counters are of type *Java Enum*. The enum fields act as counter names, and are incremented as per desired event. But, the enum based counters come with a setback, they are not dynamic in nature. Java enum fields get initialized, and defined at compile time. So its fields (names and total number) cannot be modified on the go. To overcome this we can use the *Java String* objects whose value can be dynamically changed.
-Thus, there are 2 ways of defining counters, either via enums or string. Even though most RPC calls (MapRed performs many) convert the enum fields to string, enums are more widely used for their ease of execution.
+Thus, there are 2 ways of defining counters, either via enums or string. Even though most RPCs-Remote Procedure Calls (MapRed performs many) convert the enum fields to string, enums are more widely used for their ease of execution.
 
 Next up we take up another feature of MapReduce. I shall be using the following dummpy \<Key, Value\>
 
