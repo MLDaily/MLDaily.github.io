@@ -7,6 +7,6 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "mldaily.github.io" # the base hostname & protocol for your site
 twitter_username: mldaily4u
 github_username:  mldaily
-
+comments: true
 # Build settings
 markdown: kramdown
