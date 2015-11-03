@@ -5,6 +5,7 @@ comments: true
 title:  "MapReduce - Features"
 date:   2015-11-3 12:32:21
 categories: ml-algorithms
+excerpt: The Hadoop Mapreduce comes packed with a number of features and utilities to help us around. Some of the key features
 ---
 
 
