@@ -1,31 +1,19 @@
 .home{
 	min-width:100%;
 }
-
-.title-post{
-	color:white;
-	background-color: #2a7ae2;
-	background-repeat: none;
-	border: 10px solid #2a7ae2;
-	padding: 0px 10px;
-	border-radius: 30px;
+.post-header .meta {
+  font-size: 15px;
+  color: #818181;
+  margin-top: 5px;
 }
-
-a.title-post{
-	color: white;
+.posts .post-link {
+    font-size: 20px;
+    letter-spacing: -1px;
+    line-height: 1;
 }
 
 a:hover{
 	text-decoration: none;
-}
-
-.meta-post{
-	background-color: lightgray;
-	background-repeat: none;
-	padding: 0px 10px;
-	border: 10px solid lightgray;
-	border-radius: 30px;
-	margin: -10px 0px;
 }
 
 .title-post-page{
