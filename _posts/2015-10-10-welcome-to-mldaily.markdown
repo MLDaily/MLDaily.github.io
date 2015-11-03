@@ -3,6 +3,7 @@ layout: main
 title:  "Welcome to MLDaily!"
 date:   2015-10-10 12:41:36
 categories: Machine Learning Introduction
+excerpt: Machine learning has been the secret sauce of the much hyped technical advancements, but what is Machine learning?
 ---
 
 Machine learning has been the secret sauce of the much hyped technical advancements, but what is Machine learning?<br><br>

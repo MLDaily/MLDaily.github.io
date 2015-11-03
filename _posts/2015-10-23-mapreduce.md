@@ -5,6 +5,7 @@ comments: true
 title:  "MapReduce - A Clustering Approach"
 date:   2015-10-23 8:36:21
 categories: ml-algorithms
+excerpt: Let's start by introducing a simple algorithm, which you might be using all the time, yet do not know about it.
 ---
 
 <style type="text/css">

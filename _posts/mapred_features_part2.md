@@ -1,3 +1,13 @@
+---
+layout: main
+mathjax: true
+comments: true
+title:  "MapReduce - Features"
+date:   2015-11-3 6:27:20
+categories: ml-algorithms
+excerpt: The Hadoop Mapreduce comes packed with a number of features and utilities to help us around. Some of the key features
+---
+
 #FEATURES OF MAPREDUCE PART-2
 
 Well, continuing with the features of Mapreduce, in this blog we shall be covering the Joins and Side Data Distribution.
