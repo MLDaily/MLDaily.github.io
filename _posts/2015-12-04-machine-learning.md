@@ -25,7 +25,7 @@ In order to simulate proper learning, machine must be able to learn the same way
 
 This was a simple example to demonstrate how a machine can learn, but how does the machine store the information relating to past experiences?
 
-Let us go, through it step by step (for the same example of riding the bicycle):
+Let us go through it step by step (for the same example of riding the bicycle):
 
 1. Viewing others ride- A simple experience for you, but the machine has to be given this input in the form of data, to build the basic brute force learning model.
 
@@ -37,7 +37,7 @@ Let us go, through it step by step (for the same example of riding the bicycle):
 
 <strong>What did just happen ?</strong><br>
 What did just happen?
-The crux of what happened in the above process, can be summed in three words <strong>remembering</strong>, <strong>adapting</strong> and <strong>generalising</strong>. Recognising the current situation in light of past experiences, and imitating the actions that were previously taken to tackle the situation. If an unknown situation arises, then we so we will try something different. The last part, generalising, is about recognising the similar situations, so that things learnt from one place may be applied in another. This makes learning easier and more useful.
+The crux of what happened in the above process, can be summed in three words <strong>remembering</strong>, <strong>adapting</strong> and <strong>generalising</strong>. Recognising the current situation in light of past experiences, and imitating the actions that were previously taken to tackle the situation. If an unknown situation arises, then we will try something different. The last part, generalising, is about recognising the similar situations, so that things learnt from one place may be applied in another. This makes learning easier and more useful.
 
 Learning and adaptation, and how they can be modelled in a machine formed the basis of early Artificial Intelligence, and is sometimes known as symbolic learning because the computer manipulates the symbols that reflect the environment. On the other hand, Machine Learning methods are called subsymbolic because no symbols or symbolic manipulation is involved.
 
