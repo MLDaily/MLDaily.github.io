@@ -36,7 +36,6 @@ Let us go through it step by step (for the same example of riding the bicycle):
 4. Finally the machine is able to ride the bicycle properly.
 
 <strong>What did just happen ?</strong><br>
-What did just happen?
 The crux of what happened in the above process, can be summed in three words <strong>remembering</strong>, <strong>adapting</strong> and <strong>generalising</strong>. Recognising the current situation in light of past experiences, and imitating the actions that were previously taken to tackle the situation. If an unknown situation arises, then we will try something different. The last part, generalising, is about recognising the similar situations, so that things learnt from one place may be applied in another. This makes learning easier and more useful.
 
 Learning and adaptation, and how they can be modelled in a machine formed the basis of early Artificial Intelligence, and is sometimes known as symbolic learning because the computer manipulates the symbols that reflect the environment. On the other hand, Machine Learning methods are called subsymbolic because no symbols or symbolic manipulation is involved.
