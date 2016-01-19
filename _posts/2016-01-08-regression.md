@@ -100,12 +100,15 @@ This can be represented as a function (python language) :
 The hypothesis is a simple representation of the regression model, but how do we attain this model or relation? Let us think about this. We have hundreds, maybe thousands of points on the graph, how would we fit the best line? The best line must have maximum number of points on itself. Also, the points which do not lie on the line, must be as close to the line as possible, in order to reduce the error percentage. This requires calculating the cost of the error each time we fit a line, and to minimise that error as much as possible. Next we study these two techniques.
 
 <strong>Cost Function</strong> <br>
-We are going to understand how to calculate the cost. There can be two methods to do this. First, minimise the values of <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
+We are going to understand how to calculate the cost. There can be two methods to do this. First, minimise the values of 
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
     <msub><mi>&#x3b8;<!--THETA--></mi>
     <mn>0</mn></msub> <mtext> and </mtext>
     <msub><mi>&#x3b8;<!--THETA--></mi>
     <mn>1</mn></msub>
-</math> so that the (predicted value - actual value) is minimized. The other could be the equation given below. In this, we are finding the distance between two points, the predicted point and the actual point, and we are attempting to minimise this distance. The distance is calculated using the Euclidean distance, but we ignore the square root (the values calculated might be small). The (2m) is only for ease of calculation.<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+</math> 
+so that the (predicted value - actual value) is minimized. The other could be the equation given below. In this, we are finding the distance between two points, the predicted point and the actual point, and we are attempting to minimise this distance. The distance is calculated using the Euclidean distance, but we ignore the square root (the values calculated might be small). The (2m) is only for ease of calculation.
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
 
 <munder>
 <mtext>min</mtext>
