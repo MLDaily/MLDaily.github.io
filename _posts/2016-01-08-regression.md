@@ -106,8 +106,7 @@ We are going to understand how to calculate the cost. There can be two methods t
     <mn>0</mn></msub> <mtext> and </mtext>
     <msub><mi>&#x3b8;<!--THETA--></mi>
     <mn>1</mn></msub>
-</math> 
-so that the (predicted value - actual value) is minimized. The other could be the equation given below. In this, we are finding the distance between two points, the predicted point and the actual point, and we are attempting to minimise this distance. The distance is calculated using the Euclidean distance, but we ignore the square root (the values calculated might be small). The (2m) is only for ease of calculation.
+</math> so that the (predicted value - actual value) is minimized. The other could be the equation given below. In this, we are finding the distance between two points, the predicted point and the actual point, and we are attempting to minimise this distance. The distance is calculated using the Euclidean distance, but we ignore the square root (the values calculated might be small). The (2m) is only for ease of calculation.
 <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
 
 <munder>
