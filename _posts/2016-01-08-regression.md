@@ -46,7 +46,7 @@ The equation we were talking about, let us call it our hypothesis equation. For 
       <mn>1</mn></msub>
       <mi>X</mi>
       <mo>+</mo>
-      <mn>&epsilon<!--residual error term &#x03B5 --></mn>
+      <mn>&#x03B5</mn>
   </mrow>
   <mtext>.</mtext>
 </math><br>
