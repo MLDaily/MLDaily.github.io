@@ -46,7 +46,7 @@ The equation we were talking about, let us call it our hypothesis equation. For 
       <mn>1</mn></msub>
       <mi>X</mi>
       <mo>+</mo>
-      <mn>&#x03B5;</mn>
+      <mn>&#x03B5; <!--EPSILON--></mn>
   </mrow>
   <mtext>.</mtext>
 </math><br>
@@ -61,8 +61,9 @@ Where <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
     <!-- <mtext> ]</mtext> -->
 </math> are constants in the linear equation which can be represented by the vector <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
     <mi>&#x3b8;<!-- THETA --></mi>.
-    and  <mn>&epsilon<!--residual error term &#x03B5 --></mn> represents the error term.
-</math>
+    <mtext>and</mtext>  
+      <mn>&#x03B5; <!--EPSILON--></mn>
+</math> represents the error term.
 
 If we assume the vector <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
     <mi>X</mi> <mo>=</mo> <mtext>< </mtext> <mn>1</mn>, <mi>X</mi>  <mtext> ></mtext>
