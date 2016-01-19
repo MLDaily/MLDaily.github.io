@@ -23,13 +23,13 @@ MathJax.Hub.Config({
 In our last post, we explained how we can make a machine learn. If we think about it, we are iteratively moving towards a better result every time the model improves. The simple data model developed, will now also be able to estimate a new input set and produce a valid output. This is what we could think of as the basis of machine learning.
 
 <strong>Regression</strong> <br>
-It is something similar to the idea we developed. In statistics, regression can be thought as, *the modelling of a relationship between an input variable (X) and an output variable (Y)*. The input variables are the explanatory variables (or the independent variables) while the output variable is the dependent variable, dependent on the input variable. The explanatory variables represent the inputs or the causes, i.e. potential reasons for variation. The created models explain the effects that the independent variables have on the dependent variables.
+It is something similar to the idea we developed. In statistics, regression can be thought as, *the modeling of a relationship between an input variable (X) and an output variable (Y)*. The input variables are the explanatory variables (or the independent variables) while the output variable is the dependent variable, dependent on the input variable. The explanatory variables represent the inputs or the causes, i.e. potential reasons for variation. The created models explain the effects that the independent variables have on the dependent variables.
 
 Let us look at a basic approach to regression. The image below shows some x-axis points and their corresponding y values. The x values represent our data input, while the y values represent the corresponding output for each x respectively.
 
 <img src="{{ "/images/Linear_regression.png" | prepend: site.baseurl }}" >
 
-We fit the best curve which can represent the relation between the x-y values. The equation of the curve is our required model of the relation between variables X and Y. Now, this curve can be linear or polynomial, forming the linear/polynomial regression respectively. It always depends on the data provided/observed (i.e the training data) whether it produces a line or a curve. So, we have to form an equation of relationship among X and Y and our job is done, the system will do the rest. Or will it?
+We fit the best curve, which can represent the relation between the x-y values. The equation of the curve is our required model of the relation between variables X and Y. Now, this curve can be linear or polynomial, forming the linear/polynomial regression respectively. It always depends on the data provided/observed (i.e. the training data) whether it produces a line or a curve. So, we have to form an equation of the relationship between X and Y and our job is done, the system will do the rest. Or will it?
 
 <strong>Hypothesis</strong> <br>
 The equation we were talking about, let us call it our hypothesis equation. For linear regression, the equation will simply be the equation of a line, which can be written as,<br>
@@ -105,9 +105,7 @@ We are going to understand how to calculate the cost. There can be two methods t
     <mn>0</mn></msub> <mtext> and </mtext>
     <msub><mi>&#x3b8;<!--THETA--></mi>
     <mn>1</mn></msub>
-</math> so that the ( predicted value -  actual value ) is minimum. The other could be the equation given below. In this, we are finding the distance between two points, the predicted point and the actual point, and we are attempting to minimise this distance. The distance is calculated using the euclidean distance, but we ignore the square root (the values calculated might be small). The (2m) is only for ease of calculation.
-
-<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+</math> so that the (predicted value - actual value) is minimized. The other could be the equation given below. In this, we are finding the distance between two points, the predicted point and the actual point, and we are attempting to minimise this distance. The distance is calculated using the Euclidean distance, but we ignore the square root (the values calculated might be small). The (2m) is only for ease of calculation.<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
 
 <munder>
 <mtext>min</mtext>
@@ -173,12 +171,12 @@ This equation can be represented in python as:
 		return J
 
 
-The above equation represents the Cost Function. This cost function needs to be minimum in order for our regression line to be most effective. To minimise this function, we iteratively reduce the values of our <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
+The above equation represents the Cost Function. This cost function needs to be minimized in order for our regression line to be most effective. To minimise this function, we iteratively reduce the values of our <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
     <mi>&#x3b8;<!--THETA--></mi>
 </math> vector. How we do it, is explained next.
 
 <strong>Gradient Descent</strong> <br>
-Gradient Descent is an universally used algorithm to iteratively arrive at the minimum of the cost function. Since we need to find the best line which fits each and every point on the graph, we need to change/update the values in our vector  <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
+Gradient Descent is a universally used algorithm to iteratively arrive at the minimum of the cost function. Since we need to find the best line which fits each and every point on the graph, we need to change/update the values in our vector  <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
     <mi>&#x3b8;<!--THETA--></mi>
 </math> so that they are minimum.
 
@@ -358,12 +356,12 @@ Now, we need to minimise our values of the vector <math xmlns="http://www.w3.org
     <mn>1</mn></msub>  <mtext> )</mtext>
 </math><br>
 
-The above equation needs to be repeated till convergence in order to minimise.
+The above equation needs to be repeated till it converges in order to minimise.
 
 <strong>Learning Rate ( <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"> <mi>&#x03b1;<!--ALPHA--></mi></math> )</strong> <br>
 The learning rate defines our step size. The step size can be any numerical value, but it has to be intelligently put. Consider this, if you take a large step size, you might reach a point on the curve when the <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
     <mi>&#x3b8;<!--THETA--></mi>
-</math> starts oscillating between two values and there is now way the process will converge. In such a case your machine will enter infinte loop. If your step size is very small, the machine takes time to reach the minimum. So, the step size needs to be neither too large, nor too small, it has to be intelligently choosen with respect to your data.
+</math> starts oscillating between two values and there is now way the process will converge. In such a case your machine will enter an infinite loop. If your step size is very small, the machine takes time to reach the minimum. So, the step size needs to be neither too large, nor too small, it has to be intelligently chosen with respect to your data.
 
 Representing the above explanation as code:
 
