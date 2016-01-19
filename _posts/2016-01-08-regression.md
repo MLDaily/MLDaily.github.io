@@ -60,8 +60,8 @@ Where <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
     <mn>1</mn></msub>
     <!-- <mtext> ]</mtext> -->
 </math> are constants in the linear equation which can be represented by the vector <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
-    <mi>&#x3b8;<!-- THETA --></mi>.
-    <mtext>and</mtext>  
+    <mi>&#x3b8;<!-- THETA --></mi>
+    <mtext> and </mtext>  
       <mn>&#x03B5; <!--EPSILON--></mn>
 </math> represents the error term.
 
