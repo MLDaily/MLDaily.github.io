@@ -1,7 +1,7 @@
 ---
 layout: main
 title:  "Introduction to Intelligent Systems"
-date:   2015-10-10 12:41:36
+date:   2017-09-08 10:57:36
 categories: Machine Learning Introduction
 excerpt: The market for intelligent systems has been growing at a rapid pace. Let us try to find out how it is so interesting.
 ---
