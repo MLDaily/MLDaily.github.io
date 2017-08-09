@@ -1,4 +1,3 @@
-
 ---
 layout: main
 title:  "Introduction to Intelligent Systems"
