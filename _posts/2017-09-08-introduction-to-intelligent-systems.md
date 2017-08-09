@@ -1,5 +1,6 @@
 ---
 layout: main
+comments: true
 title:  "Introduction to Intelligent Systems"
 date:   2017-08-09 10:57:36
 categories: Machine Learning Introduction
