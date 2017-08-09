@@ -2,7 +2,7 @@
 title: MLDaily
 email: mldaily4u@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Machine Learning is the essence of all the new developing technologies. We at MLDaily give an overview of the algorithms.
+  Machine Learning is the essence of all the new developing technologies.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "mldaily.github.io" # the base hostname & protocol for your site
 twitter_username: mldaily4u
