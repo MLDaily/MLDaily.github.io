@@ -46,7 +46,8 @@ $on-laptop:        800px;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
-        "base",
+		"jekyll-theme-hacker",
+		"rouge-base16-dark",
         "layout",
         "syntax-highlighting"
 ;

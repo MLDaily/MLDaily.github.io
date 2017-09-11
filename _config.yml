@@ -11,6 +11,9 @@ comments: true
 # Build settings
 markdown: kramdown
 
+# sass:
+sass_dir: ./_sass
+
 google_analytics: 
 show_downloads: true
-theme: jekyll-theme-minimal
+theme: jekyll-theme-hacker
